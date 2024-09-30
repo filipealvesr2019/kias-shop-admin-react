@@ -1,0 +1,483 @@
+.Model {
+
+    margin-top: 3rem;
+
+  margin-left: 65%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+
+.spanContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+/* Modal.css */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.modalContent {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  width: 95vw;
+  height: 95vh;
+  z-index: 9999; /* ou qualquer valor que seja suficientemente alto para garantir que esteja acima de outros elementos na página */
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+
+ 
+
+}
+
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #555;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+}
+
+.button {
+  background-color: #14337c;
+  color: #fefefe;
+  border: medium;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  font-family: "poppins";
+  font-weight: 500;
+  cursor: pointer;
+  width: 11vw;
+
+
+}
+/* Adicione esta classe para estilizar a caixa de seleção de cor */
+.colorPickerPreview {
+  width: 30px;
+  height: 30px;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+/* Adicione esta classe para estilizar o contêiner de cores */
+.colorContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -40px;
+}
+
+/* Adicione esta classe para estilizar o seletor de fotos e a label */
+select {
+  margin-top: 5px;
+}
+
+/* Adicione esta classe para estilizar o botão Adicionar/Remover Cor */
+button {
+  margin-top: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Outros estilos conforme necessário */
+.colorPickerContainer {
+  display: flex;
+  align-items: center;
+}
+
+.colorPickerPreview {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.buttonUpdate {
+  background-color: white;
+  border: 1px solid transparent; /* Tornar a borda transparente para não interferir na sombra */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10dvw;
+  height: 10dvh;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  gap: 0.5rem;
+  font-family: "poppins";
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Adicionar a sombra na borda */
+  overflow: hidden; /* Para garantir que a sombra não se espalhe para fora do botão */
+}
+
+.buttonUpdate:hover {
+  border: 1px solid #d3d3d3; /* Usando um tom mais claro de cinza usando código hexadecimal */
+}
+/* Adicione essas regras ao seu arquivo CSS de estilos */
+.thumbnailSelector {
+  display: flex;
+}
+
+.thumbnailContainer {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.thumbnailImage {
+  width: 50px; /* Ajuste o tamanho conforme necessário */
+  height: 50px; /* Ajuste o tamanho conforme necessário */
+}
+
+.fullImageContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullImage {
+  max-width: 80%;
+  max-height: 80%;
+}
+/* No seu arquivo de estilo (por exemplo, Products.module.css) */
+
+/* No seu arquivo de estilo (por exemplo, Products.module.css) */
+
+.closeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  /* Adicione outros estilos conforme necessário */
+}
+
+
+
+.thumbnailContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* Allow the thumbnails to wrap to the next line */
+
+
+
+
+}
+.thumbnailItem {
+  margin-bottom: 20px; /* Add some spacing between each variation */
+}
+
+.thumbnailImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Style the input field */
+.thumbnailInput {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+/* Style the button (optional) */
+.thumbnailButton {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #2A337C;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.thumbnailButton:hover {
+  background-color: #1A2153;
+}
+
+/* ... (existing styles) */
+
+
+/* Add these styles to your existing CSS file or module */
+
+.thumbnail {
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  margin-right: 10px; /* Adjust spacing between thumbnails */
+  cursor: pointer;
+}
+
+.enlarged {
+  max-width: 100%;
+  max-height: 400px; /* Adjust as needed */
+  cursor: pointer;
+}
+
+
+/* Products.module.css */
+
+/* Outros estilos */
+
+/* Efeito de sombreamento (background-color) ao passar o mouse apenas na miniatura dentro de thumbnailItem */
+.thumbnailItem .thumbnailImage:hover {
+  background-color: #1A2153;
+}
+
+/* Estilo para a caixa de entrada e botão, ajuste conforme necessário */
+.thumbnailItem .thumbnailImage {
+  /* Adicione estilos conforme necessário */
+  display: flex;
+  flex-direction: row;
+}
+
+/* Estilo para a caixa de entrada, ajuste conforme necessário */
+.thumbnailItem .thumbnailInput {
+  /* Adicione estilos conforme necessário */
+  width: 10vw;
+}
+
+.thumbnailItem{
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.thumbnailContainer{
+  margin-top: -15rem;
+}
+
+
+
+
+
+
+
+
+
+/* Em seu arquivo CSS ou módulo CSS associado ao seu componente */
+
+.search-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px; /* Ajuste conforme necessário */
+}
+
+/* Adicione estilos adicionais conforme desejado */
+.h1Container{
+margin-left: 3rem;
+}
+
+.deleteBtn{
+  margin-top: .2rem;
+}
+
+
+
+
+
+
+
+/* Para telas até 950px */
+@media screen and (max-width: 950px) {
+  .buttonUpdate {
+    height: 8dvh;
+    width: 15dvw;
+    margin-left: 2rem;
+  }
+}
+
+
+
+
+/* Para telas entre 900px e 1440px */
+@media screen and (900px <= width <= 1440px) {
+  .Model {
+    margin-bottom: -7rem;
+  }
+
+  .buttonUpdate {
+    height: 5dvh;
+    width: 9vw;
+  }
+}
+
+
+/* Para telas entre 768px e 1360px */
+@media screen and (min-width: 768px) and (max-width: 1360px) {
+  .h1Container {
+    margin-left: .5rem;
+  }
+
+  .Model {
+    margin-top: 3rem;
+    margin-bottom: -3rem;
+  }
+  .buttonUpdate {
+    height: 7dvh;
+    width: 9dvw;
+  }
+}
+
+
+
+/* Para telas entre 800px e 1280px */
+@media screen and ( 800px <= width <= 1280px) {
+  .h1Container {
+    margin-left: .5rem;
+  }
+
+  .Model {
+    margin-top: 3rem;
+    margin-bottom:-1rem;
+  }
+
+  .buttonUpdate {
+    height: 6dvh;
+    width: 11dvw;
+    margin-left: 2rem;
+  }
+
+  .deleteBtn {
+    height: 5vh;
+    width: 15dvw;
+    margin-top: .5rem;
+  }
+}
+
+@media screen and ( 800px <= width <= 1024px){
+  .Model {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+  }
+}
+
+@media screen and (300px <= width <= 699px){
+  .tableContainer{
+    width: 70vw;
+  }
+  .buttonUpdate {
+    height: 7dvh;
+    width: 15dvw;
+  }
+}
+@media (min-width: 1024px) {
+  .tableContainer{
+    margin-top: 5rem;
+  }
+}
+@media (min-width: 1280px) {
+  .tableContainer{
+    margin-top: 5rem;
+  }
+
+}
+
+.tableContainer{
+  width: 80vw;
+  
+  
+}
+
+.main{
+  position: relative;
+}
+
+
+
+
+
+.Modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.ModalContent {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50vw;
+  height: 40vh;
+}
+
+
+.Close {
+  color: #aaa;
+  float: right;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: -2rem;
+}
+
+.Close:hover,
+.Close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.imageContainer{
+  display: flex;
+  align-items: center;
+}

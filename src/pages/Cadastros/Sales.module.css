@@ -1,0 +1,100 @@
+
+.span:hover{
+    color: blue;
+}
+
+.button{
+    color: var(--variant-solidColor, var(--joy-palette-primary-solidColor, var(--joy-palette-common-white, #FFF)));
+    background-color: var(--variant-solidBg, var(--joy-palette-primary-solidBg, var(--joy-palette-primary-500, #0B6BCB)));
+    font-family: var(--joy-fontFamily-body, "Inter", var(--joy-fontFamily-fallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"));
+    font-weight: var(--joy-fontWeight-lg, 600);
+    line-height: var(--joy-lineHeight-md, 1.5);
+    padding: .7rem;
+    border: 0;
+    border-radius: var(--Button-radius, var(--joy-radius-sm, 6px));
+    width: 18vw;
+}
+
+
+
+
+
+
+.ButtonModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo cinza transparente */
+  }
+  
+  .ButtonModalContent {
+    /* Aqui você pode ajustar as propriedades para o conteúdo do modal */
+    width: 20vw;
+    height: 40vh;
+    background-color: white;
+    border: 1px solid rgb(206, 212, 218);
+    border-radius: 4px;
+    overflow: auto;
+    border: 1px solid #ccc;
+  }
+
+  
+  .ButtonModalContent {
+    right: 15rem;
+    margin-top: 1.5rem;
+    color: black;
+    background-color: white;
+    width: 20vw;
+    height: 40vh;
+    z-index: 7;
+    border: 1px solid rgb(206, 212, 218);
+    border-radius: 4px;
+    color: white;
+    overflow: auto;
+    border: 1px solid #ccc;
+  }
+  
+
+
+  .pending {
+    color: rgb(236, 162, 23); /* Cor para estado Pendente */
+  }
+  
+  .received {
+    color: green; /* Cor para estado Pago */
+  }
+  
+  .overdue {
+    color: rgb(236, 62, 62); /* Cor para estado Cobrança vencida */
+  }
+  
+  .confirmed {
+    color: #5454c5; /* Cor para estado Cobrança confirmada */
+  }
+  
+  .unknown {
+    color: gray; /* Cor para estado Desconhecido */
+  }
+
+  .status{
+    font-family: Urbanist, sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  .active-tab {
+    background-color: red; /* Altere para a cor desejada */
+  }
+  
+
+  .tabButtons{
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  

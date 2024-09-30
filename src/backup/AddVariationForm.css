@@ -1,0 +1,25 @@
+.red-border {
+    border: 1px solid red;
+  }
+  
+.variationSizePriceQuantityButton{
+    background-color: #14337c;
+    color: white;
+    padding: 1rem;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.AddVariationButton{
+    background-color: #14337c;
+    color: white;
+    padding: 1rem;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10rem;
+
+}

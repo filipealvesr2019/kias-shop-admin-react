@@ -1,0 +1,50 @@
+.table {
+  display: flex;
+  flex-direction: column;
+}
+.cadastro {
+  width: 50vw;
+}
+
+.h1 {
+  display: flex;
+  gap: .5rem;
+  color: #14337c;
+  font-size: .8rem;
+  padding-block: 0.5rem;
+}
+
+.AdminContainer {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+}
+.AdminMenu {
+  margin-top: 1rem;
+}
+
+.sidebar {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (width <= 600px) {
+  .list {
+    margin-left: -4rem;
+  }
+
+  .h1 {
+    margin-left: -4rem;
+    font-size: 1rem;
+  }
+}
+
+
+
+@media screen and (800px <= width <= 1024px) {
+  .cadastro{
+    width: 70vw;
+  }
+}
+
+

@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+@media (orientation: portrait) and (688px <= width <= 1031px) {
+    .container{
+      display: flex;
+      margin-left: -10rem;
+    }
+}
+
+
+

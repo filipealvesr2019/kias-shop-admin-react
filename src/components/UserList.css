@@ -1,0 +1,248 @@
+.delete{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.edit{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+table {
+    font-family:'urbanist';
+    border-collapse: collapse;
+    width: 100%;
+
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+ 
+
+  .administrador {
+    color: #11C7A1 !important; 
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: "poppins";
+
+   
+    
+
+  }
+  
+  .funcionario {
+    color: #F4A32D !important;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: "poppins";
+  }
+
+  .Gerente{
+    color: #14337c!important;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: "poppins";
+  }
+
+
+  .credencial{
+    color: #14337C;
+
+  }
+
+
+
+
+/* Adicione ao seu arquivo UserList.css ou ajuste conforme necessário */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo preta semi-transparente */
+  z-index: 999; /* Coloque o overlay acima do modal */
+}
+
+.delete-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40dvh;
+  width: 25dvw;
+  border-radius: 5px;
+  
+}
+
+.delete-modal p {
+  margin-bottom: 15px;
+  
+}
+
+.delete-modal button {
+  margin-right: 10px;
+  padding: 10px 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: -2rem;
+
+
+}
+
+.delete-modal button:hover {
+  background-color: #0056b3;
+}
+
+.delete-modal button:last-child {
+  background-color: #ccc;
+  color: #333;
+}
+
+.delete-modal button:last-child:hover {
+  background-color: #999;
+}
+
+.delete-modal .buttonDeleteStyle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Adicione ao seu arquivo UserList.css ou ajuste conforme necessário */
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+@media screen and (width <= 600px) {
+
+  /* src/Table.css */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  /* Adicione estilos específicos para telas menores aqui */
+  th, td {
+    white-space: nowrap;
+  }
+}
+
+}
+
+
+.alert{
+  display: flex;
+  margin: 0 auto;
+}
+
+
+.spanName{
+  color: black;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+/* Estilo para a sobreposição escura de fundo */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Certifique-se de que este valor seja maior que o z-index do modal */
+}
+
+/* Estilo para o modal de edição */
+.edit-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  z-index: 1001; /* Certifique-se de que este valor seja maior que o z-index da sobreposição */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o ícone de fechar */
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Estilo para os botões de ação no modal */
+.buttonEditStyle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Estilizar o botão de salvar */
+.buttonEditStyle button:first-child {
+  background-color: green;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Estilizar o botão de cancelar */
+.buttonEditStyle button:last-child {
+  background-color: #ddd;
+  color: #333;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Adicione estilos adicionais conforme necessário */

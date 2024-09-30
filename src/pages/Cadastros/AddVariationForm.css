@@ -1,0 +1,64 @@
+.variation-form-container{
+    display: flex;
+    flex-direction: column;
+}
+.red-border {
+    border: 1px solid red;
+  }
+  
+
+  .AddUrlButton{
+    background-color: #14337c;
+    color: white;
+    padding: 1rem;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.variationSizePriceQuantityButton{
+    background-color: #14337c;
+    color: white;
+    padding: .7rem 3rem;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+ 
+
+
+}
+
+.AddVariationButton{
+    background-color: #14337c;
+    color: white;
+    padding: 1rem;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    
+   
+}
+
+.AddVariationButton__Container{
+    display: flex;
+    justify-content: center;
+ 
+
+}
+
+.h2Container{
+    font-size: 2rem;
+    color:#14337c ;
+    margin-top: 1rem;
+}
+

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;400;500;600;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    min-height: 100vh;
+}
+
+
+@media  (300px <= width <= 699px) {
+    .list {
+      margin-left: -2rem;
+    }
+    .h1{
+      margin-left: -1rem;
+      white-space: nowrap;
+    }
+  
+    .nav .ul{
+      margin-left: 8rem;
+    }
+  
+  }
+
+
+ 
+
+  @media screen and (700px <= width <= 1360px) {
+   
+  
+    .main{
+
+      margin-bottom: -1rem;
+    }
+      
+  }

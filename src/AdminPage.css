@@ -1,0 +1,251 @@
+
+  
+  .info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  
+  .closeBtn{
+    margin-bottom: 5rem;
+  }
+
+
+  .container{
+    display: flex;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #05070a;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+
+}
+
+header .logo{
+  position: relative;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+header nav{
+  display: flex;
+  gap: 1rem;
+}
+header nav a{
+  position: relative;
+  text-decoration: none;
+  padding: 12px 20px;
+  color: #cdcdcd;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-size: .9rem;
+  font-family: "poppins", sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+:root{
+  --clr:#1c448e;
+
+}
+
+
+.active {
+  color: white; /* ou qualquer outra cor desejada para o link ativo */
+  font-weight: bold; /* opcional: para dar destaque ao link ativo */
+}
+
+header nav a:hover {
+  color: white; /* ou qualquer outra cor desejada para o hover */
+  font-weight: bold; 
+}
+
+/* Estilo para o link ativo ao passar o mouse sobre ele */
+header nav a.active:hover {
+  color: white; /* ou qualquer outra cor desejada para o hover do link ativo */
+  font-weight: bold; 
+}
+a {
+  position: relative;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 3px;
+  width: 0;
+  left: 50%;
+  bottom: 1px;
+  transition: 0.5s;
+  transform: translateX(-50%); /* Para centralizar a barra em relação ao texto */
+}
+
+a:hover::after {
+  width: calc(70% + 10px); /* Ajuste o valor conforme necessário */
+}
+
+@media screen  and (280px <= width <= 699px) {
+  nav a{
+    display: none;
+  }
+  .mobileMenu a{
+    color: white;
+    text-decoration: none;
+    margin-right: auto;
+    display: flex;
+    
+
+  }
+  .logo{
+    display: none;
+  }
+  
+a::after {
+  display: none;
+}
+
+a:hover::after {
+  display: none;
+}
+
+}
+
+@media screen  and ( 700px <= width){
+  .navbar{
+    display: none;
+    flex-direction: row;
+  }
+}
+
+/* RegisterPage.css */
+.page-container {
+  margin-top: 5rem;
+}
+
+.navContainer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FAFAFA;
+  padding: 1rem;
+  margin-top: 4rem;
+  z-index: 1000; /* Certifique-se de que o z-index seja maior que o do conteúdo */
+
+
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 3rem;
+  color: black;
+  cursor: pointer;
+  font-weight: 600;
+
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+}
+
+/* AdminPage.css */
+
+/* Estilo para a classe active-item */
+.cadastros.active-item {
+  /* Adicione seus estilos aqui */
+  color: #2196f3; /* Exemplo de estilo */
+  font-weight: bold; /* Exemplo de estilo */
+}
+
+/* Outros estilos para a classe cadastros */
+.cadastros {
+  /* Adicione seus estilos aqui */
+  color: black; /* Exemplo de estilo */
+}
+
+/* Estilo padrão para a classe cadastros */
+
+
+/* Estilo para a classe cadastros quando o mouse estiver sobre o elemento */
+.cadastros:hover {
+  color: #2196f3; /* Cor do texto quando hover */
+  /* Outros estilos ao passar o mouse por cima */
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav .ul li::after {
+  content: "";
+  position: absolute;
+  background-color: #2196f3;
+  height: 4px;
+  width: 0;
+  left: 50%;
+  bottom: -8px;
+  transition: 0.5s;
+  transform: translateX(-50%); /* Para centralizar a barra em relação ao texto */
+}
+
+nav .ul li:hover::after {
+  width: calc(70% + 40px); /* Ajuste o valor conforme necessário */
+}
+
+
+.maintenance-container {
+  text-align: center;
+}
+
+.maintenance-text {
+  font-size: 24px;
+  color: #333;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+}
+
+
+
+
+header nav div::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 3px;
+  width: 0;
+  left: 50%;
+  bottom: 1px;
+  transition: 0.3s ease; /* Adicione esta linha para um efeito de transição suave */
+  transform: translateX(-50%);
+}
+

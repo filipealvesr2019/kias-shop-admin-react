@@ -1,0 +1,76 @@
+/* YourComponent.css */
+
+.custom-select {
+    /* Adicione seus estilos personalizados aqui */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  /* Estilo para options seletos */
+  .custom-select option {
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Estilo para options desabilitados */
+  .custom-select option:disabled {
+    color: #888;
+  }
+  
+
+  
+
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .form-row {
+    flex: 1 1 calc(20% - 15px); /* Ajusta a largura da coluna (20% do contêiner) e considera o espaço entre as colunas */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  /* Estilos adicionais para os elementos do formulário, se necessário */
+  .form-row label {
+    margin-bottom: 8px;
+  }
+  
+  .form-row input,
+  .form-row textarea,
+  .form-row select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Adicione outros estilos conforme necessário */
+  }
+  
+  .form-row button {
+    background-color: #14337C;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    /* Adicione outros estilos conforme necessário */
+  }
+
+  
+  
+
+  
+  
+
+ 
+  .bolinha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

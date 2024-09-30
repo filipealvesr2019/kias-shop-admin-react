@@ -1,0 +1,31 @@
+.Model {
+    margin-top: 2rem;
+    margin-bottom: -14%;
+    margin-left: 52rem;
+  }
+  
+
+  @media screen and (900px <= width <= 1440px) {
+    .h1Container{
+      margin-left: 2rem;
+    }
+      
+  }
+  
+  @media screen and (768px <= width <= 1360px) {
+    .h1Container{
+      margin-left: 3rem;
+    }
+      
+  }
+  
+  @media screen and (800px <= width <= 1280px) {
+    .h1Container{
+      margin-left: 4.5rem;
+    }
+      
+  }
+  
+  
+  
+  
