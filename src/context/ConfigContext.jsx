@@ -5,7 +5,7 @@ export const ConfigContext = createContext();
 
 export const ConfigProvider = ({ children }) => {
   const [config, setConfig] = useState({
-    apiUrl: 'https://serveradmin-whhj.onrender.com',
+    apiUrl: 'https://kias-shop-backend.onrender.com',
   });
 
   return (
