@@ -20,7 +20,7 @@ header{
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #05070a;
+  background-color: #0094BC;
   padding: 10px 50px;
   display: flex;
   justify-content: space-between;
@@ -45,7 +45,7 @@ header nav a{
   position: relative;
   text-decoration: none;
   padding: 12px 20px;
-  color: #cdcdcd;
+  color: white;
   letter-spacing: 0.1em;
   font-weight: 700;
   font-size: .9rem;
